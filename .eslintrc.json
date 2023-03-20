@@ -1,0 +1,8 @@
+{
+  "extends": "./node_modules/gts/",
+  "rules": {
+    "node/no-unpublished-import": "off",
+    "node/no-extraneous-import": "off",
+    "eqeqeq": "off"
+  }
+}

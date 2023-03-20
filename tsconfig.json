@@ -1,0 +1,14 @@
+{
+  "extends": "./node_modules/gts/tsconfig-google.json",
+  "compilerOptions": {
+    "rootDir": ".",
+    "outDir": "build",
+    "target": "es2018",
+    "module": "commonjs",
+    "strict": true,
+    "resolveJsonModule": true // to read JSON
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules", "artifacts", "cache"],
+  "files": ["./hardhat.config.ts"]
+}
