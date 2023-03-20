@@ -44,7 +44,7 @@ export async function setBalance(address: string, balance: BigNumber) {
  */
 
 export async function resetBalance(address: string) {
-  await ethers.provider.send('hardhat_setBalance', [address, '0x21E19E0C9BAB2400000']);
+  await ethers.provider.send('hardhat_setBalance', [address, '0x21e19e0c9bab2400000']); // 1000 ETH
 }
 
 /**

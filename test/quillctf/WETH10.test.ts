@@ -41,5 +41,8 @@ describe('QuillCTF: 9. WETH10', () => {
 
     // bob balance should be 11 ETH
     expect(await ethers.provider.getBalance(bob.address)).to.eq(ethers.utils.parseEther('11'));
+
+    // reset Bob balance to default (1000 ETH)
+    await ethers.provider.send('hardhat_setBalance', [bob.address, '0xde0b6b3a7640000']);
   });
 });
